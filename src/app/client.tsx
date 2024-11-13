@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import React from 'react'
+import React from 'react';
 import About from '../components/layout/About';
-import Footer from '../components/layout/Footer'
+import Footer from '../components/layout/Footer';
 import Hero from '../components/layout/Hero';
 import Projects from '../components/layout/Projects';
 import Services from '../components/layout/Services';
@@ -13,7 +13,7 @@ import Modal from '../components/layout/Modal';
 
 export function Client() {
   return (
-    <GlobalStateProvider >
+    <GlobalStateProvider>
       <Modal />
       <BurgerMenu />
       <Navbar />
@@ -22,7 +22,8 @@ export function Client() {
       <Projects />
       <Services />
       <Footer />
-    </GlobalStateProvider>)
+    </GlobalStateProvider>
+  );
 }
 
 export default Client;

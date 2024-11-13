@@ -1,14 +1,14 @@
 import MenuItem from './MenuItem';
-import ContactBtn from './ContactBtn';
 
 const Menu = () => {
-
-    return (<>
-        <MenuItem title={"Services"}/>
-        <MenuItem title={"Work"}/>
-        <MenuItem title={"About"}/>
-        <ContactBtn title={"Contact Me"} />
-        </>);
-}
+  return (
+    <>
+      <MenuItem title="Home" href="/" />
+      <MenuItem title="About Us" href="/about" />
+      <MenuItem title="Our Fabrics" href="/fabrics" />
+      <MenuItem title="Contact" href="/contact" />
+    </>
+  );
+};
 
 export default Menu;

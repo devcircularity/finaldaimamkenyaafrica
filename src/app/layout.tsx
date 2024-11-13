@@ -1,20 +1,20 @@
-import { Metadata } from "next"
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'FullstackLab.net | Dennis-Immanuel Czogalla - Fullstack Developer',
-    description: "I'm a fullstack developer specialized in React.js, Next.js and Typescript who builds innovative web applications for desktop and mobile devices.",
-  }
+  title: 'Daima Mkenya - Kenyan Identity Through Fabric',
+  description: 'Celebrating Kenya through sustainable and inspiring fabrics.',
+};
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode;
 }) {
-    return (
-        <html lang="en">
-            <body>
-                <div id="root">{children}</div>
-            </body>
-        </html>
-    )
+  return (
+    <html lang="en">
+      <body>
+        <div id="root">{children}</div>
+      </body>
+    </html>
+  );
 }

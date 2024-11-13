@@ -1,13 +1,15 @@
-import { useGlobalState } from "../../../../contexts/GlobalStateContext";
+import Link from 'next/link';
 
-const MenuItem = ({title}:{title:string}) => {
-    
-    const { isMenuOpen, toggleMenu } = useGlobalState()
-
-    return (<div className='flex items-center'>
-        <a aria-label={title} className={"transition ease-in-out duration-300 text-center hover:text-violet-400 "} onClick={isMenuOpen? toggleMenu : undefined} href={"/#"+title}>{title}</a>
-        </div>
-    );
-}
+const MenuItem = ({ title, href }: { title: string; href: string }) => {
+  return (
+    <div className="flex items-center">
+      <Link href={href} aria-label={title}>
+        <span className="transition ease-in-out duration-300 text-center hover:text-violet-400">
+          {title}
+        </span>
+      </Link>
+    </div>
+  );
+};
 
 export default MenuItem;
