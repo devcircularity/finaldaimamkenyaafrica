@@ -5,8 +5,10 @@ const Menu = () => {
     <>
       <MenuItem title="Home" href="/" />
       <MenuItem title="About Us" href="/about" />
-      <MenuItem title="Our Fabrics" href="/fabrics" />
+      <MenuItem title="Shop" href="/fabrics" />
+      <MenuItem title="Our Founder" href="/our-founder" />
       <MenuItem title="Contact" href="/contact" />
+
     </>
   );
 };

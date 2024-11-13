@@ -41,7 +41,6 @@ function Footer() {
             Nairobi, Kenya<br />
             <strong>Phone:</strong> +254 721 888 887<br />
             <strong>Email:</strong> info@daimamkenyaafrica.com<br />
-            <strong>Email:</strong> zahra@daimamkenyaafrica.com<br />
           </p>
         </div>
 

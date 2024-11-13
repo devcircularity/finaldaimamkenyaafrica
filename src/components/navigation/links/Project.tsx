@@ -14,7 +14,7 @@ const Project = ({ headline, image, text, tags }: { headline: string; image: str
         />
       </div>
       <div className="p-4">
-        <div className="text-xl font-medium mb-4">{headline}</div>
+        <div className="text-xl font-medium mb-4 text-black">{headline}</div> {/* Title now black */}
         <p>{text}</p>
         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
           {tags.map((item, index) => (
