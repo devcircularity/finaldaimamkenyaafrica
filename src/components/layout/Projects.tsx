@@ -22,7 +22,10 @@ const Projects = () => {
       <p className="flex text-4xl mb-8 mt-8 justify-center text-white font-bold text-center">
         Featured Projects
       </p>
-      <div className="flex flex-wrap w-full gap-8 desktop:px-20 justify-center">
+      
+      {/* Responsive Grid for Projects */}
+      <div className="grid gap-8 w-full desktop:px-20 justify-items-center" 
+           style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
         {data.map((item, index) => (
           <Project
             key={index}

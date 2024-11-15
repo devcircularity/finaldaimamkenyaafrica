@@ -6,7 +6,7 @@ function FabricsHero() {
     <div
       className="flex flex-col justify-between min-h-screen desktop:px-20 mobile:p-6"
       style={{
-        backgroundImage: 'url("/image/fabrics-hero.jpg")', // Replace with actual fabric hero image
+        backgroundImage: 'url("/image/fabrics-hero.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -17,10 +17,10 @@ function FabricsHero() {
 
       {/* Hero Heading */}
       <div className="text-white text-center mb-20">
-        <h1 className="text-5xl font-bold">Explore Our Fabrics</h1>
-        <p className="mt-4 text-xl">
+        <h1 className="hero-heading text-white">Explore Our Fabrics</h1> {/* Applied global class */}
+        <p className="hero-subheading">
           Discover unique Kenyan-inspired designs crafted with care and sustainability in mind.
-        </p>
+        </p> {/* Applied global class */}
       </div>
 
       {/* Empty div for additional spacing if needed */}

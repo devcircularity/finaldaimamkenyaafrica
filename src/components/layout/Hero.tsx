@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import Typing from '../static/Typing';
-import Arrow from '../static/Arrow';
 import Image from 'next/image';
 
 const variants = {
@@ -10,21 +8,23 @@ const variants = {
   visible: { opacity: 0 },
 };
 
+const arrowVariants = {
+  animate: {
+    y: [0, 10, 0], // Arrow moves up and down
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
 function Hero() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Function to open the modal
-  const openModal = () => {
-    setIsModalOpen(true);
-    // Prevent scrolling when modal is open
-    document.body.style.overflow = 'hidden';
-  };
-
-  // Function to close the modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-    // Restore scrolling when modal is closed
-    document.body.style.overflow = 'auto';
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('next-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -37,21 +37,36 @@ function Hero() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="flex flex-col items-center justify-center text-center z-20 text-white w-full px-4">
+      <div className="flex flex-col items-center justify-center text-center z-20 text-white w-full px-4 mt-16">
         <motion.div initial="visible" animate="hidden" variants={variants}>
-          <p
-            className="desktop:text-[5vw] mobile:text-[8vw] font-bold text-black"
-            style={{ whiteSpace: 'nowrap' }} // Ensure no line break
-          >
+          <p className="hero-heading text-white break-words"> {/* Applied global class */}
             Together, Let&apos;s Wear Our Pride
           </p>
-          <p className="desktop:text-[3vw] mobile:text-[5vw]">
+          <p className="hero-subheading text-black"> {/* Applied global class */}
             Embrace the Spirit of Kenya with
             <Typing />
           </p>
         </motion.div>
       </div>
-      {/* Rest of the component remains unchanged */}
+
+      {/* Animated Down Arrow */}
+      <motion.div
+        className="absolute bottom-10 cursor-pointer"
+        variants={arrowVariants}
+        animate="animate"
+        onClick={scrollToNextSection}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="black"
+          className="w-8 h-8 md:w-10 md:h-10"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12.75L12 20.25L4.5 12.75" />
+        </svg>
+      </motion.div>
     </div>
   );
 }

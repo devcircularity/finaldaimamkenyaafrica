@@ -6,7 +6,7 @@ function FoundersHero() {
     <div
       className="flex flex-col justify-between min-h-screen desktop:px-20 mobile:p-6"
       style={{
-        backgroundImage: 'url("/image/founders-hero.jpg")', // Replace with actual founders hero image
+        backgroundImage: 'url("/image/founders-hero.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -17,10 +17,10 @@ function FoundersHero() {
 
       {/* Hero Heading */}
       <div className="text-white text-center mb-20">
-        <h1 className="text-5xl font-bold">Meet Our Founders</h1>
-        <p className="mt-4 text-xl">
+        <h1 className="hero-heading text-white">Meet Our Founders</h1> {/* Applied global class */}
+        <p className="hero-subheading">
           The minds and hearts driving our mission. Learn more about their journey and dedication to creating impact.
-        </p>
+        </p> {/* Applied global class */}
       </div>
 
       {/* Empty div for additional spacing if needed */}

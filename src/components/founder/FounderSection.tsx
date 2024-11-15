@@ -2,20 +2,20 @@ import Image from 'next/image';
 
 function FounderSection() {
   return (
-    <section className="max-w-6xl mx-auto flex flex-row items-start gap-8 p-6">
+    <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8 p-6">
       {/* Image Section */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 md:order-none order-1">
         <Image
           src="/image/team/zahra.png" // Path to the founder's image
           alt="Portrait of Mrs. Zahra Bahlewa Moi"
-          width={400} // Increased width
-          height={400} // Increased height
-          className="rounded-lg"
+          width={400} // Image width for larger screens
+          height={400} // Image height for larger screens
+          className="rounded-lg w-full h-auto md:w-[400px] md:h-[400px]" // Responsive image sizing
         />
       </div>
 
       {/* Text Content Section */}
-      <div className="flex-grow text-black text-left">
+      <div className="flex-grow text-black text-left md:order-none order-2">
         <h1 className="text-3xl font-bold mb-4">Mrs. Zahra Bahlewa Moi</h1>
         <h2 className="text-3xl font-bold text-gray-600 mb-4">Seasoned Business Leader</h2>
         <p className="mb-4">

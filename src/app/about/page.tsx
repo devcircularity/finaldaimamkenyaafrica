@@ -18,7 +18,7 @@ export default function About() {
       <AboutHero />
 
       <div className="flex flex-col items-center">
-        <main className="w-full flex flex-col items-center mt-10">
+        <main className="w-full flex flex-col items-center mt-">
           <AboutContent />
         </main>
       </div>

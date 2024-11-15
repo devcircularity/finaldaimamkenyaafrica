@@ -9,6 +9,7 @@ import Services from '../components/layout/Services';
 import BurgerMenu from '../components/navigation/menu/BurgerMenu';
 import Navbar from '../components/navigation/menu/Navbar';
 import { GlobalStateProvider } from '../contexts/GlobalStateContext';
+import GallerySection from '../components/Gallery/Gallery';
 import Modal from '../components/layout/Modal';
 
 export function Client() {
@@ -18,9 +19,10 @@ export function Client() {
       <BurgerMenu />
       <Navbar />
       <Hero />
-      <About />
+      <GallerySection />
       <Projects />
       <Services />
+
       <Footer />
     </GlobalStateProvider>
   );

@@ -27,7 +27,7 @@
 "scripts": {
   "dev": "next dev -p 4311",
   "build": "next build",
-  "start": "next start",
+  "start": "next start -p 4311",
   "lint": "next lint",
   "deploy": "gh-pages -d build"
 },

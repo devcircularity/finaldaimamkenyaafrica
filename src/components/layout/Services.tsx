@@ -34,7 +34,9 @@ const Services = () => {
       <p className="desktop:text-[40px] mobile:text-[24px] font-bold my-4 text-center">
         Want to Collaborate? Get in Touch
       </p>
-      <ContactBtn title="Contact Us" href="/contact" />
+      <div className="mb-8">
+        <ContactBtn title="Contact Us" href="/contact" />
+      </div>
     </div>
   );
 };
