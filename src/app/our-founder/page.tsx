@@ -8,6 +8,7 @@ import FounderSection from '../../components/founder/FounderSection'; // Import 
 import Modal from '../../components/layout/Modal';
 import Footer from '../../components/layout/Footer';
 import { GlobalStateProvider } from '../../contexts/GlobalStateContext';
+import SDGGallery from '../../components/SDGGallery/SDGGallery'; // Import the SDGGallery component
 
 export default function OurFounders() {
   return (
@@ -17,6 +18,7 @@ export default function OurFounders() {
       <Nav />
       <FoundersHero /> {/* Hero section */}
       <FounderSection />
+      <SDGGallery/>
       <Footer />
     </GlobalStateProvider>
   );

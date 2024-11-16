@@ -1,19 +1,19 @@
 import ContactBtn from "../navigation/menu/elements/ContactBtn";
 import Service from "../static/Service";
-import Image from "next/image"; // Import next/image
+import Image from "next/image"; 
 
 const Services = () => {
   return (
-    <div id="Services" className="flex h-fit text-white flex-col items-center bg-slate-800">
+    <div id="Services" className="flex h-fit text-black flex-col items-center bg-[#F5F5DC]">
       <Image
         className="w-full h-8 transform rotate-180 block"
         src="/patterns/7.png"
         alt="transition"
-        width={1920} // Set the appropriate width
-        height={64}  // Set the appropriate height
+        width={1920} 
+        height={64}  
         style={{ margin: 0, padding: 0 }}
       />
-      <p className="text-4xl mb-8 mt-8 text-white font-bold">Our Vision & Offerings</p>
+      <p className="text-4xl mb-8 mt-8 font-bold">Our Vision & Offerings</p>
       <div className="flex desktop:flex-row mobile:flex-col flex-wrap mobile:items-center pb-8 justify-center text-center h-full">
         <Service
           hl="Authentic Fabric Creation"

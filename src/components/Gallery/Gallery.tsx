@@ -9,7 +9,6 @@ const images = [
   '/images/stuff/IMG_8823.jpg',
   '/images/stuff/IMG_8829.jpg',
   '/images/stuff/IMG_8843.jpg',
-  '/images/stuff/IMG_8845.jpg'
 ];
 
 const GallerySection = () => {

@@ -8,6 +8,7 @@ import Modal from '../../components/layout/Modal';
 import Footer from '../../components/layout/Footer';
 import { GlobalStateProvider } from '../../contexts/GlobalStateContext';
 import AboutContent from '../../components/layout/About'; // Reuse existing About content
+import SDGGallery from '../../components/SDGGallery/SDGGallery'; // Import the SDGGallery component
 
 export default function About() {
   return (
@@ -22,6 +23,7 @@ export default function About() {
           <AboutContent />
         </main>
       </div>
+      <SDGGallery/>
       <Footer />
     </GlobalStateProvider>
   );

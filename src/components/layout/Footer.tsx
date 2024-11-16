@@ -3,17 +3,17 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center bg-[#F5F5DC]">
+    <footer className="flex flex-col items-center bg-slate-800 text-white">
       <Image
         src="/patterns/7.png"
         alt="transition"
-        width={1920} // Replace with actual width
-        height={32}  // Replace with actual height
+        width={1920}
+        height={32}
         className="w-full h-8 transform rotate-180 block"
         style={{ margin: 0, padding: 0 }}
       />
 
-      <div className="flex desktop:justify-center mobile:justify-center mobile:flex-wrap w-full text-black pt-8">
+      <div className="flex desktop:justify-center mobile:justify-center mobile:flex-wrap w-full pt-8">
         {/* About Us Section */}
         <div className="flex flex-col text-xl desktop:w-1/4 mobile:w-full mobile:justify-center mobile:mb-8 self-center text-center">
           <h4 className="text-2xl font-bold mb-4">About Us</h4>
@@ -49,15 +49,15 @@ function Footer() {
           <h4 className="text-2xl font-bold mb-4">Subscription</h4>
           <p>Subscribe to our newsletter for updates on our products and initiatives.</p>
           <form action="#" method="post" className="mt-4">
-            <input type="email" name="email" placeholder="Your Email" className="p-2 rounded-lg mb-2" />
-            <input type="submit" value="Subscribe" className="p-2 bg-black text-white rounded-lg cursor-pointer" />
+            <input type="email" name="email" placeholder="Your Email" className="p-2 rounded-lg mb-2 text-black" />
+            <input type="submit" value="Subscribe" className="p-2 bg-white text-black rounded-lg cursor-pointer" />
           </form>
         </div>
       </div>
 
-      <hr className="w-full border-t border-gray-600 mt-4" />
+      <hr className="w-full border-t border-gray-400 mt-4" />
 
-      <div className="flex text-black text-center p-5">
+      <div className="flex text-center p-5">
         &copy; {new Date().getFullYear()} Daima Mkenya Africa. All rights reserved.
       </div>
     </footer>

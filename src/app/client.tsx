@@ -11,6 +11,7 @@ import Navbar from '../components/navigation/menu/Navbar';
 import { GlobalStateProvider } from '../contexts/GlobalStateContext';
 import GallerySection from '../components/Gallery/Gallery';
 import Modal from '../components/layout/Modal';
+import SDGGallery from '../components/SDGGallery/SDGGallery'; // Import the SDGGallery component
 
 export function Client() {
   return (
@@ -20,9 +21,9 @@ export function Client() {
       <Navbar />
       <Hero />
       <GallerySection />
+      <SDGGallery />
       <Projects />
       <Services />
-
       <Footer />
     </GlobalStateProvider>
   );
