@@ -11,7 +11,7 @@ const Summary = () => {
                     Inspired by the colors of our national flag, Daima Mkenya kikoy celebrates our shared identity, pride, and culture. Each piece carries the essence of our land, heritage, and people, binding us together with threads of our collective values.
                 </p>
                 <p className="mb-5">
-                    Sustainably crafted with care, this fabric is more than just material—it's a celebration of our journey, a statement of our values, and a promise for our future.
+                    Sustainably crafted with care, this fabric is more than just material—it&apos;s a celebration of our journey, a statement of our values, and a promise for our future.
                 </p>
                 <p className="mb-5">
                     Beach and bush, and everyday use; heat, sunshine, or snow, Daima will flow. Wrap yourself with the warmth of Kenyan culture wherever you go.
