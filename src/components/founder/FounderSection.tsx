@@ -22,7 +22,7 @@ function FounderSection() {
           Mrs. Zahra Bahlewa Moi is a distinguished business leader with extensive experience in strategic management and business development. She holds a Global Executive Master’s in Business Administration and a Bachelor of Science in International Business Administration, both from United States International University-Africa (USIU-A). Additionally, she earned an Executive Certificate in Being Innovative from IMD in Lausanne, Switzerland.
         </p>
         <p>
-          From 2016 to 2022, Zahra served on the board of the Tourism Research Institute, where she played a pivotal role in shaping Kenya’s tourism research and policy development. As CEO of the award-winning Lord Erroll Restaurant from 2017 to 2022, she spearheaded operations, enhancing its reputation as one of Nairobi’s premier dining destinations. Zahra also serves as a director for several companies, leveraging her expertise to drive organizational growth and success.
+          From 2016 to 2022, Zahra served on the board of the Tourism Research Institute, where she played a pivotal role in shaping Kenya’s tourism research and policy development. As CEO of the multi-award-winning Lord Erroll Restaurant from 2017 to 2022, she spearheaded operations, enhancing its reputation as one of Nairobi’s premier dining destinations. Zahra also serves as a director for several companies, leveraging her expertise to drive organizational growth and success.
         </p>
       </div>
     </section>

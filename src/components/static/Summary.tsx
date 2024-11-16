@@ -14,7 +14,7 @@ const Summary = () => {
                     Sustainably crafted with care, this fabric is more than just material—it&apos;s a celebration of our journey, a statement of our values, and a promise for our future.
                 </p>
                 <p className="mb-5">
-                    Beach and bush, and everyday use; heat, sunshine, or snow, Daima will flow. Wrap yourself with the warmth of Kenyan culture wherever you go.
+                    Beach and bush, and everyday use; heat, or snow, Daima will flow. Wrap yourself with the warmth of Kenyan culture wherever you go.
                 </p>
                 <p className="mb-5">
                     Comfortable and versatile. 100% Kenyan Cotton. Made in Kenya.
