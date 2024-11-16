@@ -17,9 +17,9 @@ function FoundersHero() {
 
       {/* Hero Heading */}
       <div className="text-white text-center mb-20">
-        <h1 className="hero-heading text-white">Meet Our Founders</h1> {/* Applied global class */}
+        <h1 className="hero-heading text-white">Meet Our Founder</h1> {/* Applied global class */}
         <p className="hero-subheading">
-          The minds and hearts driving our mission. Learn more about their journey and dedication to creating impact.
+          The minds and hearts driving our mission. Learn more about her journey and dedication to creating impact.
         </p> {/* Applied global class */}
       </div>
 
