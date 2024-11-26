@@ -1,23 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./src/app/portfolio/projects/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Include all files in src
+    "./src/app/**/*.{js,jsx,ts,tsx}", // Include app directory
+    "./src/app/portfolio/projects/**/*.{js,jsx,ts,tsx}", // Include specific projects directory
+    "./components/**/*.{js,jsx,ts,tsx}", // Include global components
+    "./pages/**/*.{js,jsx,ts,tsx}", // Include pages directory
+  ],
   theme: {
     screens: {
-      ...require('tailwindcss/defaultTheme').screens, // Bring back default breakpoints
-      'mobile': { 'max': '1023px' },
-      'desktop': { 'min': '1024px' },
+      ...require('tailwindcss/defaultTheme').screens, // Default Tailwind breakpoints
+      'mobile': { 'max': '1023px' }, // Custom breakpoint for mobile
+      'desktop': { 'min': '1024px' }, // Custom breakpoint for desktop
     },
     extend: {
       colors: {
-        lightcyan: '#84ffff',
-        gradientLeft: '#1e88e5',
-        gradientRight: '#8e24aa',
+        lightcyan: '#84ffff', // Custom color
+        gradientLeft: '#1e88e5', // Custom gradient left color
+        gradientRight: '#8e24aa', // Custom gradient right color
+        beige: '#F5F5DC', // Match your global background color
       },
       animation: {
-        blinking: "blinking 10s linear infinite",
-        scalepulse: "scalepulse 8s ease-in-out infinite",
-        fadeIn: "fadeIn 5s",
-        moveFade: "moveFade 2s linear infinite",
+        blinking: "blinking 10s linear infinite", // Animation for blinking effect
+        scalepulse: "scalepulse 8s ease-in-out infinite", // Animation for scale pulse
+        fadeIn: "fadeIn 5s", // Fade-in effect
+        moveFade: "moveFade 2s linear infinite", // Move and fade effect
       },
       keyframes: {
         moveFade: {
@@ -43,15 +50,15 @@ module.exports = {
         },
       },
       maxHeight: {
-        'lg': '512px',
-        'md': '448px',
-        'sm': '384px',
+        'lg': '512px', // Large max height
+        'md': '448px', // Medium max height
+        'sm': '384px', // Small max height
       },
       padding: {
-        '1/2': '50%',
-        full: '100%',
+        '1/2': '50%', // Padding 50%
+        full: '100%', // Full padding
       },
     },
   },
-  plugins: [],
-}
+  plugins: [], // Remove the plugins if they are not required
+};

@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div 
-      className={`mobile:hidden fixed top-0 z-50 w-full transition-opacity duration-500 ${
+      className={`mobile:hidden fixed top-[40px] z-50 w-full transition-opacity duration-500 ${
         isAtTop ? "opacity-100" : "opacity-100 bg-black"
       }`}
     >

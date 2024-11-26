@@ -1,0 +1,28 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50; /* Ensure it stays above other content */
+    background-color: #b71c1c; /* Dark red background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tagline {
+    font-size: 0.9rem;
+  }
+  
+  .socials a {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #ddd; /* Lighter shade on hover */
+  }
+  

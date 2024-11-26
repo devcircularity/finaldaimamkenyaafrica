@@ -9,6 +9,7 @@ import Footer from '../../components/layout/Footer';
 import { GlobalStateProvider } from '../../contexts/GlobalStateContext';
 import AboutContent from '../../components/layout/About'; // Reuse existing About content
 import SDGGallery from '../../components/SDGGallery/SDGGallery'; // Import the SDGGallery component
+import AboutPoemSection from '../../components/layout/AboutPoemSection'; // Import the new poem section
 
 export default function About() {
   return (
@@ -18,12 +19,15 @@ export default function About() {
       <Nav />
       <AboutHero />
 
-      <div className="flex flex-col items-center">
-        <main className="w-full flex flex-col items-center mt-">
+      {/* Remove container restrictions for full-width components */}
+      <div className="w-full">
+        <main className="flex flex-col">
           <AboutContent />
+          <AboutPoemSection /> {/* Add the new poem section */}
         </main>
       </div>
-      <SDGGallery/>
+
+      <SDGGallery />
       <Footer />
     </GlobalStateProvider>
   );

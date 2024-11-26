@@ -1,8 +1,6 @@
 import { GlobalStateProvider } from '../contexts/GlobalStateContext';
 import './globals.css';
-import dynamic from 'next/dynamic';
-
-const App = dynamic(() => import('./client'), { ssr: false }); // Correct setup for dynamic imports
+import App from './client'; // Direct import
 
 export default function Page() {
   return (
