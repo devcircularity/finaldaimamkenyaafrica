@@ -17,6 +17,7 @@ export default function OurFounders() {
       <BurgerMenu /> {/* Add BurgerMenu here */}
       <Nav />
       <FoundersHero /> {/* Hero section */}
+      
       <FounderSection />
       <SDGGallery/>
       <Footer />
