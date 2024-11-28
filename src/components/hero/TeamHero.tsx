@@ -6,7 +6,7 @@ function TeamHero() {
     <div
       className="flex flex-col justify-between min-h-[50vh] desktop:px-20 mobile:p-6"
       style={{
-        backgroundImage: 'url("/image/team-hero.jpg")', // Replace with your team hero image
+        backgroundImage: 'url("/image/team-hero.png")', // Replace with your team hero image
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
