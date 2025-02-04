@@ -1,0 +1,68 @@
+/* ProductGallery.module.css */
+
+.carouselWrapper {
+  overflow: hidden; /* Hide overflow for a clean look */
+  margin: 40px 0;
+}
+
+.carousel {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: calc(310px * 12); /* 300px item width + 10px gap, times 12 items */
+}
+
+.carousel:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move left by half of the content width */
+  }
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.productName {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+}

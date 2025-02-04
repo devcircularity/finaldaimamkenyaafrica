@@ -5,7 +5,7 @@ const Menu = () => {
     <div className="flex items-center space-x-6 relative">
       <MenuItem title="Home" href="/" />
       <MenuItem title="About Us" href="/about" />
-      <MenuItem title="Shop" href="/fabrics" />
+      <MenuItem title="Shop" href="/products" />
       <MenuItem title="Team" href="/the-team" />
       <MenuItem title="Contact" href="/contact" />
     </div>

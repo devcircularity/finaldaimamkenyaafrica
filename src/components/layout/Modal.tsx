@@ -1,3 +1,5 @@
+"use client";
+
 import { useGlobalState } from '../../contexts/GlobalStateContext';
 import Close from '../navigation/menu/elements/Close';
 import AnimatedBlurryBg from '../animation/AnimatedBlurryBg';
@@ -20,7 +22,6 @@ const Modal = () => {
     return () => window.removeEventListener('show-team-member', handleShowMember as EventListener);
   }, []);
 
-  // Prevent background scrolling when modal is open
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = 'hidden';
@@ -29,7 +30,6 @@ const Modal = () => {
     }
   }, [isModalOpen]);
 
-  // Close modal when clicking outside of it
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if ((e.target as HTMLDivElement).id === 'modal-backdrop') {
       toggleModal();
@@ -52,7 +52,6 @@ const Modal = () => {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               className="w-full sm:w-1/2 lg:w-2/3 xl:w-3/4 h-screen bg-white shadow-lg z-[101] relative overflow-y-auto"
             >
-              {/* Modal Header */}
               <div className="bg-[#9C2F2E] text-white p-4 flex justify-between items-center sticky top-0 z-[102]">
                 <div>
                   <h1 className="text-2xl font-bold">{member.name}</h1>
@@ -63,7 +62,6 @@ const Modal = () => {
                 </button>
               </div>
 
-              {/* Modal Content */}
               <div className="p-6">
                 {member.description.split('\n').map((paragraph: string, index: number) => (
                   <p key={index} className="text-lg leading-relaxed text-gray-800 whitespace-pre-line mb-4">

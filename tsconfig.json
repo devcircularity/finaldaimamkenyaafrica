@@ -26,9 +26,11 @@
       "@/*": [
         "/src/*"
       ],
+      "@/lib/*": ["src/lib/*"],
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@/components/*": ["src/components/*"]
     }
   },
   "include": [

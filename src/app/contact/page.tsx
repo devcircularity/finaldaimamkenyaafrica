@@ -16,7 +16,7 @@ export default function Contact() {
       <BurgerMenu /> {/* Add BurgerMenu here */}
       <Nav />
       <ContactHero /> {/* Hero for the Contact page */}
-      <ContactContent /> {/* Add the contact content */}
+
       <Footer />
     </GlobalStateProvider>
   );

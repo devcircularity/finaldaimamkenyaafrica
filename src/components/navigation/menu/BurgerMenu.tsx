@@ -1,3 +1,5 @@
+"use client";
+
 import Burger from "./elements/Burger";
 import Close from "./elements/Close";
 import MenuItem from "./elements/MenuItem";

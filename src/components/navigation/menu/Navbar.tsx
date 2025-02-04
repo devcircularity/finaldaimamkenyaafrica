@@ -1,3 +1,5 @@
+"use client";
+
 import useScrollPos from "../../../hooks/useScrollPos";
 import Menu from "./elements/Menu";
 

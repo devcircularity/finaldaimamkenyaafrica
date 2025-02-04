@@ -1,0 +1,22 @@
+/* Styling for the custom product class */
+.custom-product h3 {
+    color: black !important; /* Ensure the text is black */
+    font-weight: bold; /* Make the text bold for better visibility */
+    font-size: 1rem; /* Adjust font size */
+    text-align: center; /* Center-align the text */
+    margin-top: 0.5rem; /* Add spacing above the title */
+  }
+  
+  /* Optional: Adjust overall product container */
+  .custom-product {
+    text-align: center; /* Ensure the entire product is centered */
+  }
+  
+  /* Maintain the grid layout */
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible grid layout */
+    gap: 1rem; /* Spacing between products */
+    padding: 1rem; /* Add padding around the grid */
+  }
+  

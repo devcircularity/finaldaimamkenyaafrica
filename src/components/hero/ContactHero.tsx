@@ -15,9 +15,10 @@ function ContactHero() {
       <div className="w-full max-w-4xl p-6 text-center bg-white bg-opacity-80 mt-32 rounded-lg shadow-lg">
         <h1 className="hero-heading text-black">Get in Touch</h1> {/* Applied global class */}
         <p className="hero-subheading text-gray-800">We&apos;d love to hear from you! Reach out for inquiries or collaborations.</p>
-        <p className="text-gray-700">Address: Nairobi, Kenya</p>
+        
         <p className="text-gray-700">Phone: +254 721 888 887</p>
         <p className="text-gray-700">Email: info@daimamkenyaafrica.com</p>
+        <p className="mb-4">P.O Box 63023, 00200 Nairobi, Kenya</p>
         <form className="mt-6">
           <input type="text" placeholder="Your Name" className="w-full p-2 mb-4 border rounded" />
           <input type="email" placeholder="Your Email" className="w-full p-2 mb-4 border rounded" />

@@ -7,6 +7,7 @@ module.exports = {
     "./components/**/*.{js,jsx,ts,tsx}", // Include global components
     "./pages/**/*.{js,jsx,ts,tsx}", // Include pages directory
   ],
+  important: true,
   theme: {
     screens: {
       ...require('tailwindcss/defaultTheme').screens, // Default Tailwind breakpoints
